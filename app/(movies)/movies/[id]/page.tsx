@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
-import MovieInfo from '../../../../components/movie-info'
-import MovieVideos from '../../../../components/movie-videos'
+import MovieInfo from '../../../../components/movie-detail/movie-info'
+import MovieVideos from '../../../../components/movie-detail/movie-videos'
 
 export const metadata = {
   title: 'Movies',
