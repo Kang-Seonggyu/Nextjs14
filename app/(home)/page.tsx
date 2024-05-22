@@ -1,11 +1,10 @@
 import Movie from '../../components/movie/movie'
+import { API_URL } from '../constants'
 import styles from './home.module.css'
 
 export const metadata = {
   title: 'Home',
 }
-
-export const API_URL = 'https://nomad-movies.nomadcoders.workers.dev/movies'
 
 async function getMovies() {
   // 아래 로딩을 추가했을 때, loading.tsx 없으면, 로딩이 끝나기 전까지 페이지 진입을 못함.
