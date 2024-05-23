@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.leftside > div {
+  min-width: 160px;
+  min-height: 160px;
+  height: 25vh;
+  overflow: auto;
+  border: 1px solid var(--border-color);
+}
+
+.rightside {
+  flex: 1;
+  border: 1px solid var(--border-color);
+  overflow: auto;
+}

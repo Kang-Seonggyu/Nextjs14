@@ -1,3 +1,11 @@
+import { redirect } from 'next/navigation'
+
 export default function AboutMe() {
-  return <h1>About ME!</h1>
+  const flag = false
+
+  if (flag) {
+    redirect('/')
+  } else {
+    return <h1>About ME!</h1>
+  }
 }

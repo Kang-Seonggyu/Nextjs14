@@ -1,0 +1,27 @@
+.charList {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  overflow: auto;
+  padding-left: 10px;
+  flex-direction: column;
+}
+.charList li {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.charList li::marker {
+  content: '';
+}
+.charList li img {
+  height: 18vh;
+}
+.charList li div {
+  display: flex;
+  width: 100px;
+  /* flex-direction: column; */
+}
+.charList li div h2 {
+  font-size: 1.5rem;
+}

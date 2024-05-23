@@ -44,9 +44,6 @@ center,
 dl,
 dt,
 dd,
-ol,
-ul,
-li,
 fieldset,
 form,
 label,
@@ -86,6 +83,10 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+ul,
+ol {
+  margin: 0;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -102,10 +103,6 @@ section {
 }
 body {
   line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
 }
 blockquote,
 q {
@@ -138,4 +135,8 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+:root {
+  --border-color: #ccc;
 }

@@ -1,0 +1,14 @@
+.container {
+  padding: 20px;
+}
+.container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.todolist {
+  list-style: decimal;
+  padding: 0 20px;
+}
+.todolist li {
+  margin-bottom: 6px;
+}
