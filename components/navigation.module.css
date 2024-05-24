@@ -1,6 +1,7 @@
 .nav {
   background-color: #2d2d2d;
   position: fixed;
+  min-width: 300px;
   width: 30%;
   margin: 0 auto;
   top: 20px;

@@ -1,0 +1,75 @@
+#authbox {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+}
+#authbox img {
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px;
+}
+#authbox span {
+  height: 20px;
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 30px;
+  padding: 8px 12px;
+  background-color: #2d2d2d;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#btn:hover {
+  background-color: #4e4e4e;
+}
+
+#myInfo {
+  position: absolute;
+  top: 60px;
+  width: 120px;
+  background-color: aliceblue;
+  color: black;
+  font-size: 15px;
+}
+#myInfo::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  top: -7px;
+  right: calc(50% - 10px);
+  background: linear-gradient(
+    -45deg,
+    transparent 0%,
+    transparent 50%,
+    #ffffff 51%,
+    #ffffff 100%
+  );
+  transform: rotate(45deg);
+}
+
+#modalLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+}
+#modalLogin h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 12px;
+}
+#modalLogin input {
+  font-size: 1.5rem;
+  text-indent: 8px;
+}
+#modalLogin button {
+  margin-top: 12px;
+  font-size: 1.5rem;
+}

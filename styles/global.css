@@ -127,6 +127,7 @@ body {
   background-color: black;
   color: white;
   font-size: 18px;
+  min-width: 960px;
 }
 a {
   color: inherit;

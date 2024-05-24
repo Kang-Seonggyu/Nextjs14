@@ -1,6 +1,7 @@
 import '../styles/global.css'
 import { Metadata } from 'next'
 import Navigation from '../components/navigation'
+import AuthBox from '../components/auth/auth'
 
 export const metadata: Metadata = {
   title: {
@@ -15,6 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <body>
         <Navigation />
+        <AuthBox />
         {children}
       </body>
     </html>
