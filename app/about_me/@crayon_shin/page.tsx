@@ -1,4 +1,4 @@
-import styles from './character.module.css'
+import styles from './crayon_shin.module.css'
 
 async function getShin() {
   // await new Promise((resolve) => setTimeout(resolve, 2000))

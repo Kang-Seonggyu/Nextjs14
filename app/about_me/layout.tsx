@@ -7,18 +7,37 @@ export const metadata = {
 export default function Layout({
   children,
   todos,
-  characters,
+  onepiece,
+  crayon_shin,
 }: {
   children: React.ReactNode
   todos: React.ReactNode
-  characters: React.ReactNode
+  onepiece: React.ReactNode
+  crayon_shin: React.ReactNode
 }) {
   return (
     <>
       <div className={styles.container}>
         <div className={styles.leftside}>
           <div>{todos}</div>
-          <div>{characters}</div>
+          <div>
+            <input
+              type="radio"
+              name="character"
+              id="onepiece"
+              value="onepiece"
+            />
+            <label htmlFor="onepiece">원피스</label>
+            <input
+              type="radio"
+              name="character"
+              id="crayon_shin"
+              value="crayon_shin"
+            />
+            <label htmlFor="crayon_shin">짱구</label>
+            <div id="onepiece_char">{onepiece}</div>
+            <div id="crayon_shin_char">{crayon_shin}</div>
+          </div>
         </div>
         <div className={styles.rightside}>Something New!</div>
       </div>

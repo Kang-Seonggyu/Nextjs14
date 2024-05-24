@@ -17,6 +17,33 @@
   border: 1px solid var(--border-color);
 }
 
+.leftside > div > input {
+  display: none;
+}
+.leftside > div > input + label {
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  display: inline-block;
+  padding: 4px 8px;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.leftside > div > input + label:hover {
+  background-color: rgb(80, 145, 122);
+}
+.leftside > div > input:checked + label {
+  background-color: rgb(0, 126, 82);
+}
+.leftside > div > input[id='onepiece']:checked ~ div[id='crayon_shin_char'] {
+  display: none;
+}
+
+.leftside > div > input[id='crayon_shin']:checked ~ div[id='onepiece_char'] {
+  display: none;
+}
+
 .rightside {
   flex: 1;
   border: 1px solid var(--border-color);

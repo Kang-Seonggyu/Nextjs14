@@ -2,7 +2,6 @@
   display: flex;
   gap: 10px;
   height: 100%;
-  overflow: auto;
   padding-left: 10px;
   flex-direction: column;
 }
@@ -15,6 +14,7 @@
   content: '';
 }
 .charList li img {
+  width: 70%;
   height: 18vh;
 }
 .charList li div {
